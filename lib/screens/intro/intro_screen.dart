@@ -1,9 +1,8 @@
-
-
 import 'package:ex_module_core/ex_module_core.dart';
-import 'package:ex_module_core/gen/assets.gen.dart';
+
 import 'package:ex_module_core/generated/l10n.dart';
 import 'package:ex_widget/ex_widget.dart';
+import 'package:ex_widget/gen/assets.gen.dart';
 import 'package:flutter/material.dart';
 
 import '../../main.dart';
@@ -85,6 +84,7 @@ class _IntroScreenState extends State<IntroScreen> {
           children: [
             Image.asset(
               Assets.images.imgIntro5.path,
+              package: "ex_widget",
             )
           ],
         ),
@@ -99,6 +99,7 @@ class _IntroScreenState extends State<IntroScreen> {
           children: [
             Image.asset(
               Assets.images.imgIntro4.path,
+              package: "ex_widget",
             ),
             const SizedBox(
               height: 32,
@@ -131,6 +132,7 @@ class _IntroScreenState extends State<IntroScreen> {
           children: [
             Image.asset(
               Assets.images.imgIntro6.path,
+              package: "ex_widget",
             ),
             const SizedBox(
               height: 32,

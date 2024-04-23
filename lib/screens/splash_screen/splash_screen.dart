@@ -1,6 +1,8 @@
+import 'package:ex_main/screens/home/home_screen.dart';
 import 'package:ex_module_core/ex_module_core.dart';
-import 'package:ex_module_core/gen/assets.gen.dart';
+
 import 'package:ex_widget/ex_widget.dart';
+import 'package:ex_widget/gen/assets.gen.dart';
 import 'package:flutter/material.dart';
 
 import '../intro/intro_screen.dart';
@@ -54,6 +56,7 @@ class _SplashScreenState extends State<SplashScreen> {
             height: 80,
             child: Image.asset(
               Assets.images.flutter.path,
+              package: "ex_widget",
             ),
           ),
         ),
@@ -74,6 +77,13 @@ class _SplashScreenState extends State<SplashScreen> {
     Navigator.of(context).push(
       MaterialPageRoute(
           builder: (context) => const IntroScreen(), fullscreenDialog: false),
+    );
+  }
+
+  void _goToHomeScreen(BuildContext context) {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+          builder: (context) =>  HomePage(), fullscreenDialog: false),
     );
   }
 }

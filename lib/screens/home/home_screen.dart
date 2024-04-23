@@ -35,7 +35,9 @@ class _HomePageState extends State<HomePage> {
     return BlocBuilder<AppCubit, AppSetting>(
       builder: (context, state) {
         return IBoardScaffold(
-          appBar: BaseAppBar(title: ILanguage.current.home),
+          appBar: BaseAppBar(
+            title: ILanguage.current.home,
+          ),
           body: Padding(
             padding: const EdgeInsets.all(16),
             child: Column(
